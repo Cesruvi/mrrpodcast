@@ -1,4 +1,6 @@
 :root{
+  --accent2:#f7bfd2;
+  --accent:#f3b0c6;
   --bg:#f7f7f7;
   --fg:#111111;
   --muted:rgba(0,0,0,.62);
@@ -30,5 +32,8 @@ a{color:inherit;text-decoration:none}
 img{max-width:100%;height:auto}
 
 :root{
-  --accent: #0D1740; 
+  --accent2:#f7bfd2;
+  --pink2:#f7bfd2;
+  --pink:#f3b0c6;
+  --accent: #f3b0c6; 
 }
