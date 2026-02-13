@@ -1,4 +1,6 @@
 :root{
+  --accent2:#172973;
+  --accent:#0D1740;
   --bg:#f7f7f7;
   --fg:#111111;
   --muted:rgba(0,0,0,.62);
@@ -8,17 +10,16 @@
   /* palette inspired by screenshot */
   --hero:#7e8d7a;        /* green */
   --hero2:#8fa08a;
-  --pink:var(--accent);
+  --pink:var(--accent);        /* bar */
   --pink2:var(--accent2);
 
-  --accent:#0D1740;
-  --accent2:#172973;
   --radius:18px;
   --shadow:0 18px 55px rgba(0,0,0,.22);
 
   --container:1100px;
   --gutter:20px;
 }
+
 
 *{box-sizing:border-box}
 html,body{height:100%}

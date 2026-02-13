@@ -1,14 +1,15 @@
 .hero{
-  background-color: var(--hero, #0b3b2e);
   background-image:
     radial-gradient(900px 700px at 20% 10%, rgba(255,255,255,.18), transparent 60%),
-    linear-gradient(90deg, var(--hero, rgba(0,0,0,.35)), var(--hero2, rgba(0,0,0,.35))),
+    linear-gradient(90deg, rgba(0,0,0,.35), rgba(0,0,0,.35)),
     url("../assets/images/hero.jpg"),
     url("assets/images/hero.jpg"),
-    url("/assets/images/hero.jpg");
-  background-size: auto, auto, cover, cover, cover;
-  background-position: center, center, center, center, center;
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    url("/assets/images/hero.jpg") !important;
+  background-size: auto, auto, cover, cover, cover !important;
+  background-position: center, center, center, center, center !important;
+  background-repeat: no-repeat !important;
+  background-color: transparent !important;
+  min-height: 70vh;
   color:#fff;
   padding: 92px 0 56px;
   position:relative;
