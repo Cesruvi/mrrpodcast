@@ -1,7 +1,7 @@
 .hero{
   background-image:
     radial-gradient(900px 700px at 20% 10%, rgba(255,255,255,.18), transparent 60%),
-    linear-gradient(90deg, var(--hero), var(--hero2)),
+    linear-gradient(90deg, var(--hero, rgba(0,0,0,.35)), var(--hero2, rgba(0,0,0,.35))),
     url("../assets/images/hero.jpg");
   background-size: auto, auto, cover;
   background-position: center, center, center;
@@ -11,14 +11,17 @@
   position:relative;
   overflow:hidden;
 }
+
 .hero:before{
   content:"";
-  position:absolute; inset:0;
+  position:absolute;
+  inset:0;
   background-image: radial-gradient(rgba(255,255,255,.09) 1px, transparent 1px);
   background-size: 6px 6px;
   opacity:.08;
   pointer-events:none;
 }
+
 .hero-grid{
   position:relative;
   display:grid;
@@ -26,24 +29,33 @@
   gap: 28px;
   align-items:center;
 }
+
 .hero-kicker{
   font-size:14px;
   font-weight:700;
   color:rgba(255,255,255,.78);
   margin-bottom: 10px;
 }
+
 .hero-copy h1{
   margin:0 0 14px;
   font-size: 64px;
   line-height: .95;
   letter-spacing: -1.2px;
 }
+
 .hero-text{
   margin:0 0 18px;
   max-width: 52ch;
   color: rgba(255,255,255,.85);
 }
-.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+
+.hero-actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
 
 
 .playerbar{
