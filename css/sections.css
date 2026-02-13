@@ -2,7 +2,7 @@
   background-image:
     radial-gradient(900px 700px at 20% 10%, rgba(255,255,255,.18), transparent 60%),
     linear-gradient(90deg, var(--hero), var(--hero2)),
-    url("/assets/images/hero.jpg");
+    url("../assets/images/hero.jpg");
   background-size: auto, auto, cover;
   background-position: center, center, center;
   background-repeat: no-repeat;
