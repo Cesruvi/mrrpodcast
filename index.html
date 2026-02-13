@@ -1,1 +1,141 @@
-<!doctype html><html lang='es'><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/><title>El Ático de las Historias</title><link rel='stylesheet' href='css/tokens.css'/><link rel='stylesheet' href='css/layout.css'/><link rel='stylesheet' href='css/components.css'/><link rel='stylesheet' href='css/sections.css'/></head><body id='top'><header class='site-header'><div class='container header-inner'><a class='brand' href='#top'>El Ático de las Historias</a><nav class='nav'><a href='#episodes'>Episodes</a><a href='#blog'>Blog</a><a href='#about'>About Me</a></nav><a class='btn btn-primary' href='#subscribe'>Subscribe</a></div></header><main><section class='hero section'><div class='container hero-grid'><div class='hero-copy'><div class='pill'>New episode</div><h1>Historias que se escuchan de noche.</h1><p class='lead'>Mitología, historia y personajes. Episodios cortos y cuidados: escucha, comparte y suscríbete.</p><div class='hero-actions'><a class='btn btn-primary' href='#episodes'>Play</a><a class='btn btn-ghost' href='#about'>More info</a></div><div class='platforms'><a class='platform' href='#' title='Spotify'><img src='assets/icons/spotify.svg' alt=''><span>Spotify</span></a><a class='platform' href='#' title='Apple Podcasts'><img src='assets/icons/apple-podcasts.svg' alt=''><span>Apple</span></a><a class='platform' href='#' title='YouTube'><img src='assets/icons/youtube.svg' alt=''><span>YouTube</span></a></div></div><div class='hero-media'><div class='hero-img' role='img' aria-label='Imagen del podcast'></div></div></div></section><section id='episodes' class='section'><div class='container'><div class='section-head'><h2>Últimos episodios</h2><p class='muted'>Los 3 más recientes.</p></div><div class='episodes-grid' id='episodesGrid'></div></div></section><section id='subscribe' class='section'><div class='container'><div class='section-head'><h2>Subscribe</h2><p class='muted'>Déjame tu email y te apunto manualmente (por ahora).</p></div><form class='subscribe' id='subscribeForm'><label class='label' for='subName'>Nombre</label><input id='subName' name='name' type='text' placeholder='Tu nombre'/><label class='label' for='subEmail'>Email</label><input id='subEmail' name='email' type='email' placeholder='tu@email.com' required/><button class='btn btn-primary' type='submit'>Enviar</button><p class='tiny muted'>Se abrirá tu app de correo.</p></form></div></section><section id='blog' class='section'><div class='container'><div class='section-head'><h2>Blog</h2><p class='muted'>Placeholder.</p></div><div class='card'><h3>Próximamente</h3><p class='muted'>Posts y notas.</p></div></div></section><section id='about' class='section'><div class='container'><div class='section-head'><h2>About Me</h2><p class='muted'>Bio y contacto.</p></div><div class='about-grid'><div class='card'><h3>Quién soy</h3><p class='muted'>Un podcast narrado en primera persona.</p></div><div class='card'><h3>Contacto</h3><p class='muted'>Escribe a <a class='link' href='mailto:you@example.com'>you@example.com</a></p></div></div></div></section></main><footer class='site-footer'><div class='container footer-inner'><span class='muted'>© <span id='year'></span> El Ático de las Historias</span><a class='muted link' href='#top'>Back to top</a></div></footer><script src='js/app.js'></script></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>El Ático de las Historias</title>
+  <meta name="description" content="Podcast: El Ático de las Historias. Episodios, blog y sobre mí." />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+</head>
+
+<body id="top">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Ir arriba">EL ÁTICO<br><span class="brand-sub">DE LAS HISTORIAS</span></a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#episodes">EPISODES</a>
+        <a href="#blog">BLOG</a>
+        <a href="#about">ABOUT ME</a>
+        <a class="btn btn-pill" href="#subscribe">SUBSCRIBE</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="hero-kicker">New episode</div>
+          <h1>El Ático de<br>las Historias</h1>
+          <p class="hero-text">
+            Un viaje por la historia, la mitología y personajes destacados.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#episodes">PLAY RIGHT AWAY</a>
+            <a class="btn btn-outline" href="#about">MORE INFO</a>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <img class="hero-photo" src="assets/images/hero.jpg" alt="Imagen del podcast">
+        </div>
+      </div>
+    </section>
+
+    <section class="playerbar" aria-label="Plataformas">
+      <div class="container playerbar-inner">
+        <div class="player-icons">
+          <a class="iconbtn" href="#" title="Spotify" aria-label="Spotify">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 .001 20.001A10 10 0 0 0 12 2Zm4.58 14.43a.75.75 0 0 1-1.03.25c-2.83-1.73-6.39-2.12-10.57-1.16a.75.75 0 0 1-.33-1.46c4.56-1.04 8.48-.6 11.7 1.36.35.21.46.67.23 1.01Zm1.08-2.6a.9.9 0 0 1-1.24.3c-3.24-1.99-8.18-2.57-12.03-1.4a.9.9 0 0 1-.52-1.72c4.39-1.33 9.85-.68 13.58 1.61.42.26.56.81.21 1.21Zm.09-2.72C14 8.82 8.3 8.62 4.73 9.73a1 1 0 1 1-.6-1.9c4.1-1.28 10.46-1.03 14.86 1.6a1 1 0 0 1-1.12 1.68Z"/></svg>
+          </a>
+          <a class="iconbtn" href="#" title="Apple Podcasts" aria-label="Apple Podcasts">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a4.2 4.2 0 1 0 0 8.4A4.2 4.2 0 0 0 12 2Zm0 10.4a3.2 3.2 0 0 0-3.2 3.2v4.2a3.2 3.2 0 1 0 6.4 0v-4.2a3.2 3.2 0 0 0-3.2-3.2Zm-6.3 2.0a1 1 0 0 1 1.3-.5 6.7 6.7 0 0 0 10 0 1 1 0 1 1 .8 1.8 8.7 8.7 0 0 1-13 0 1 1 0 0 1-.1-1.3Z"/></svg>
+          </a>
+          <a class="iconbtn" href="#" title="YouTube" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2a3 3 0 0 0-2.1-2.1C17.9 4.7 12 4.7 12 4.7s-5.9 0-7.5.4A3 3 0 0 0 2.4 7.2 31 31 0 0 0 2 12a31 31 0 0 0 .4 4.8 3 3 0 0 0 2.1 2.1c1.6.4 7.5.4 7.5.4s5.9 0 7.5-.4a3 3 0 0 0 2.1-2.1A31 31 0 0 0 22 12a31 31 0 0 0-.4-4.8ZM10 15.5v-7l6 3.5-6 3.5Z"/></svg>
+          </a>
+        </div>
+
+        <a class="btn btn-download" href="#" aria-label="Descargar">DOWNLOAD</a>
+      </div>
+    </section>
+
+    <section id="episodes" class="section section-light">
+      <div class="container">
+        <div class="section-head center">
+          <div class="kicker">START LISTEN, JOIN OUR JOURNEY</div>
+          <h2>RECENT EPISODES</h2>
+        </div>
+
+        <div class="episodes-grid" id="episodesGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="subscribe" class="section section-light">
+      <div class="container">
+        <div class="section-head">
+          <h2>Subscribe</h2>
+          <p class="muted">Nombre + email. Te llega un correo y lo gestionas manualmente.</p>
+        </div>
+
+        <form class="subscribe" id="subscribeForm">
+          <label class="label" for="subName">Nombre</label>
+          <input id="subName" name="name" type="text" placeholder="Tu nombre" autocomplete="name" />
+
+          <label class="label" for="subEmail">Email</label>
+          <input id="subEmail" name="email" type="email" placeholder="tu@email.com" autocomplete="email" required />
+
+          <button class="btn btn-primary" type="submit">Enviar</button>
+          <p class="tiny muted">Se abrirá tu app de correo para enviar la solicitud.</p>
+        </form>
+      </div>
+    </section>
+
+    <section id="blog" class="section section-light">
+      <div class="container">
+        <div class="section-head">
+          <h2>Blog</h2>
+          <p class="muted">Placeholder.</p>
+        </div>
+        <div class="card">
+          <h3>Próximamente</h3>
+          <p class="muted">Notas, guiones, referencias.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section section-light">
+      <div class="container">
+        <div class="section-head">
+          <h2>About Me</h2>
+          <p class="muted">Bio + contacto.</p>
+        </div>
+        <div class="about-grid">
+          <div class="card">
+            <h3>Quién soy</h3>
+            <p class="muted">Podcast narrado en primera persona. Historia, mitología y personajes destacados.</p>
+          </div>
+          <div class="card">
+            <h3>Contacto</h3>
+            <p class="muted">Escribe a <a class="link" href="mailto:you@example.com">you@example.com</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="muted">© <span id="year"></span> El Ático de las Historias</span>
+      <a class="muted link" href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

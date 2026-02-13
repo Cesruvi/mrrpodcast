@@ -1,1 +1,5 @@
-[{"title":"La caída de Ícaro","date":"2026-02-10","duration":"14 min","playUrl":"#","infoUrl":"#"},{"title":"La maldición de los Atridas","date":"2026-02-03","duration":"18 min","playUrl":"#","infoUrl":"#"},{"title":"El último viaje de Ulises","date":"2026-01-27","duration":"16 min","playUrl":"#","infoUrl":"#"}]
+[
+  {"title":"El Ático de las Historias","image":"assets/images/ep1.jpg","playUrl":"#","infoUrl":"#"},
+  {"title":"That’s What I Think About Seagulls","image":"assets/images/ep2.jpg","playUrl":"#","infoUrl":"#"},
+  {"title":"Lost at Sea","image":"assets/images/ep3.jpg","playUrl":"#","infoUrl":"#"}
+]
