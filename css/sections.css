@@ -1,6 +1,11 @@
 .hero{
-  background: radial-gradient(900px 700px at 20% 10%, rgba(255,255,255,.18), transparent 60%),
-              linear-gradient(90deg, var(--hero), var(--hero2));
+  background:
+    radial-gradient(900px 700px at 20% 10%, rgba(255,255,255,.18), transparent 60%),
+    linear-gradient(90deg, var(--hero), var(--hero2)),
+    url("../assets/images/hero.jpg");
+  background-size: auto, auto, cover;
+  background-position: center, center, center;
+  background-repeat: no-repeat;
   color:#fff;
   padding: 92px 0 56px;
   position:relative;
@@ -17,7 +22,7 @@
 .hero-grid{
   position:relative;
   display:grid;
-  grid-template-columns: 1.1fr .9fr;
+  grid-template-columns: 1fr;
   gap: 28px;
   align-items:center;
 }
@@ -39,14 +44,6 @@
   color: rgba(255,255,255,.85);
 }
 .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-.hero-media{display:flex;justify-content:flex-end}
-.hero-photo{
-  width:min(420px, 100%);
-  border-radius: 22px;
-  box-shadow: var(--shadow);
-  border: 6px solid rgba(255,255,255,.25);
-  background:#fff;
-}
 
 .playerbar{
   background: linear-gradient(90deg, var(--pink), var(--pink2));
@@ -144,8 +141,7 @@ input:focus{border-color: rgba(0,0,0,.35)}
 @media (max-width:820px){
   .hero{padding: 86px 0 46px}
   .hero-grid{grid-template-columns: 1fr}
-  .hero-media{justify-content:flex-start}
-  .episodes-grid{grid-template-columns: 1fr}
+    .episodes-grid{grid-template-columns: 1fr}
   .about-grid{grid-template-columns: 1fr}
   .iconbtn svg{fill:#111}
 }
